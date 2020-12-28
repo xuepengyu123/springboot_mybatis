@@ -1,43 +1,23 @@
 package com.sys.manage.service.impl;
 
-import com.sys.manage.dao.UserMapper;
-import com.sys.manage.model.User;
+import com.sys.manage.dao.TUserMapper;
+import com.sys.manage.model.TUser;
 import com.sys.manage.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
-
 @Service
 public class UserServiceImpl implements UserService {
 
-
     @Autowired
-    private UserMapper userMapper;
+    private TUserMapper tUserMapper;
 
     @Override
-    public int deleteByPrimaryKey(Integer id) {
-        return userMapper.deleteByPrimaryKey(id);
+    public TUser selectByPrimaryKey(Integer id) {
+        TUser tUser = tUserMapper.selectByPrimaryKey(id);
+        return tUser;
+
     }
 
-    @Override
-    public int insert(User record) {
-        return userMapper.insert(record);
-    }
-
-    @Override
-    public User selectByPrimaryKey(Integer id) {
-        return userMapper.selectByPrimaryKey(id);
-    }
-
-    @Override
-    public List<User> selectAll() {
-        return userMapper.selectAll();
-    }
-
-    @Override
-    public int updateByPrimaryKey(User record) {
-        return userMapper.updateByPrimaryKey(record);
-    }
 
 }

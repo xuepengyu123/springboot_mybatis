@@ -1,0 +1,31 @@
+server:
+  port: 8089
+
+spring:
+  mvc:
+    static-path-pattern: /**
+  datasource:
+    username: root
+    password: 123456
+    url: jdbc:mysql://localhost:3306/swtest
+    driver-class-name: com.mysql.jdbc.Driver
+  redis:
+    cluster:
+      nodes:
+        - Centos6701:6379
+        - Centos6701:6380
+        - Centos6702:6380
+        - Centos6702:6379
+        - Centos6703:6379
+        - Centos6703:6380
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package:  com.sys.manage.model
+
+#showSql
+logging:
+  level:
+    com:
+      example:
+        mapper : debug
