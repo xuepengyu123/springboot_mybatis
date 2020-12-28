@@ -3,6 +3,7 @@ package com.sys;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 import org.springframework.session.data.redis.config.annotation.web.http.EnableRedisHttpSession;
 
 /**
@@ -13,6 +14,7 @@ import org.springframework.session.data.redis.config.annotation.web.http.EnableR
 @SpringBootApplication
 @MapperScan("com.sys.manage.dao")
 @EnableRedisHttpSession(maxInactiveIntervalInSeconds = 1800)
+@EnableZuulProxy
 public class App{
 
 	

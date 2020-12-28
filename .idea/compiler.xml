@@ -14,7 +14,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="managesys" options="-parameters" />
-      <module name="springboot_mybatis" options="-parameters" />
+      <module name="springboot_mybatis" options="" />
     </option>
   </component>
 </project>
