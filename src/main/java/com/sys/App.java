@@ -3,6 +3,7 @@ package com.sys;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.session.data.redis.config.annotation.web.http.EnableRedisHttpSession;
 
 /**
  * spring_boot 启动类
@@ -11,6 +12,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  */
 @SpringBootApplication
 @MapperScan("com.sys.manage.dao")
+@EnableRedisHttpSession(maxInactiveIntervalInSeconds = 1800)
 public class App{
 
 	
