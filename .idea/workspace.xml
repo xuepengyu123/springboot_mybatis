@@ -10,13 +10,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32f10771-cb2f-4209-be3c-c20c44414134" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/assembly/webapp.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sys/common/entity/SystemCode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sys/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sys/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sys/common/entity/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sys/common/entity/Result.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sys/common/filter/RedisSessionInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sys/common/filter/RedisSessionInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sys/manage/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sys/manage/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sys/manage/controller/ManageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sys/manage/controller/ManageController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +67,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -489,7 +489,7 @@
       <workItem from="1554973252333" duration="1310000" />
       <workItem from="1609054149716" duration="11961000" />
       <workItem from="1609074481140" duration="710000" />
-      <workItem from="1609115151418" duration="10742000" />
+      <workItem from="1609115151418" duration="15337000" />
     </task>
     <servers />
   </component>
@@ -575,7 +575,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/sys/manage/controller/ManageController.java</url>
-          <line>43</line>
+          <line>44</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -585,7 +585,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/sys/common/filter/RedisSessionInterceptor.java</url>
-          <line>20</line>
+          <line>28</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>

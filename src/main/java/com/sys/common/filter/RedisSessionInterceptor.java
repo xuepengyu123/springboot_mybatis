@@ -1,5 +1,10 @@
 package com.sys.common.filter;
 
+import com.google.gson.Gson;
+import com.sys.common.entity.Result;
+import com.sys.common.entity.SystemCode;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.web.servlet.HandlerInterceptor;
@@ -12,11 +17,14 @@ import java.io.IOException;
 
 //拦截登录失效的请求
 public class RedisSessionInterceptor implements HandlerInterceptor {
+    private static final Logger LOGGER = LoggerFactory.getLogger(RedisSessionInterceptor.class);
+
     @Autowired
     private StringRedisTemplate redisTemplate;
 
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
+        LOGGER.info("-----RedisSession拦截器处理-----");
         //无论访问的地址是不是正确的，都进行登录验证，登录成功后的访问再进行分发，404的访问自然会进入到错误控制器中
         HttpSession session = request.getSession();
         if (session.getAttribute("loginUserId") != null) {
@@ -27,10 +35,9 @@ public class RedisSessionInterceptor implements HandlerInterceptor {
                     return true;
                 }
             } catch (Exception e) {
-                e.printStackTrace();
+                LOGGER.error("验证当前请求的session是否是已登录的session出现错误", e);
             }
         }
-
         response401(response);
         return false;
     }
@@ -38,12 +45,11 @@ public class RedisSessionInterceptor implements HandlerInterceptor {
     private void response401(HttpServletResponse response) {
         response.setCharacterEncoding("UTF-8");
         response.setContentType("application/json; charset=utf-8");
-
         try {
-            //response.getWriter().print(JSON.toJSONString(new ReturnData(StatusCode.NEED_LOGIN, "", "用户未登录！")));
-            response.getWriter().print("用户未登录！");
+            Gson gson = new Gson();
+            response.getWriter().print(gson.toJson(Result.error(SystemCode.SYS0001.getCode(), SystemCode.SYS0001.getDesc())));
         } catch (IOException e) {
-            e.printStackTrace();
+            LOGGER.error("返回错误输出错误", e);
         }
     }
 

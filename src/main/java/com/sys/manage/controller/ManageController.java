@@ -14,6 +14,7 @@ import java.util.List;
 
 @EnableAutoConfiguration
 @RestController
+@RequestMapping(value = "/api/user")
 public class ManageController {
 
     @Autowired

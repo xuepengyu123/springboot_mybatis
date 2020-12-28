@@ -1,8 +1,11 @@
 package com.sys.manage.controller;
 
 import com.sys.common.entity.Result;
+import com.sys.common.filter.RedisSessionInterceptor;
 import com.sys.manage.model.User;
 import com.sys.manage.service.UserService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,6 +19,8 @@ import java.util.Map;
 @RestController
 @RequestMapping(value = "/api/user")
 public class LoginController {
+    private static final Logger LOGGER = LoggerFactory.getLogger(RedisSessionInterceptor.class);
+
     @Autowired
     private UserService userService;
 
