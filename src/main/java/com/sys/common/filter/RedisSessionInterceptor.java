@@ -24,7 +24,7 @@ public class RedisSessionInterceptor implements HandlerInterceptor {
 
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
-        LOGGER.info("-----RedisSession拦截器处理-----");
+        LOGGER.debug("-----RedisSession拦截器处理-----");
         //无论访问的地址是不是正确的，都进行登录验证，登录成功后的访问再进行分发，404的访问自然会进入到错误控制器中
         HttpSession session = request.getSession();
         if (session.getAttribute("loginUserId") != null) {

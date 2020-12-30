@@ -40,4 +40,9 @@ public class UserServiceImpl implements UserService {
         return userMapper.updateByPrimaryKey(record);
     }
 
+    @Override
+    public User selectByUserNameAndPassword(String username, String password) {
+        return userMapper.selectByUserNameAndPassword(username,password);
+    }
+
 }

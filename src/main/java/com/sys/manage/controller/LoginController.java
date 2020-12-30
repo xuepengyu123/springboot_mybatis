@@ -2,6 +2,7 @@ package com.sys.manage.controller;
 
 import com.sys.common.entity.Result;
 import com.sys.common.filter.RedisSessionInterceptor;
+import com.sys.common.utils.PasswordUtil;
 import com.sys.manage.model.User;
 import com.sys.manage.service.UserService;
 import org.slf4j.Logger;
@@ -17,7 +18,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 @RestController
-@RequestMapping(value = "/api/user")
+@RequestMapping(value = "/manage/user")
 public class LoginController {
     private static final Logger LOGGER = LoggerFactory.getLogger(RedisSessionInterceptor.class);
 
@@ -28,11 +29,13 @@ public class LoginController {
     private StringRedisTemplate redisTemplate;
 
     @RequestMapping("/login")
-    public Result login(HttpServletRequest request, int id) {
-
+    public Result login(HttpServletRequest request, String username, String password) {
         request.getSession().setAttribute("request Url", request.getRequestURL());
-
-        User user = userService.selectByPrimaryKey(id);
+        LOGGER.info("对明文密码进行加密");
+        byte[] salt = PasswordUtil.getStaticSalt();
+        String ciphertext = PasswordUtil.encrypt(username, password, salt);
+        LOGGER.debug("加密后的密码为：{}", ciphertext);
+        User user = userService.selectByUserNameAndPassword(username,ciphertext);
         if (user != null) {
             HttpSession session = request.getSession();
             session.setAttribute("loginUserId", user.getId());

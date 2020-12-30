@@ -10,12 +10,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32f10771-cb2f-4209-be3c-c20c44414134" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sys/common/entity/SystemCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sys/common/utils/PasswordUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sys/common/entity/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sys/common/entity/Result.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sys/common/filter/RedisSessionInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sys/common/filter/RedisSessionInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sys/common/filter/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sys/common/filter/WebSecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sys/manage/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sys/manage/controller/LoginController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sys/manage/controller/ManageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sys/manage/controller/ManageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sys/manage/controller/RedisController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sys/manage/dao/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sys/manage/dao/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sys/manage/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sys/manage/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sys/manage/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sys/manage/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sys/manage/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sys/manage/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/generator.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/generator.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -239,7 +250,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../skywalking" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -254,6 +265,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -490,6 +502,8 @@
       <workItem from="1609054149716" duration="11961000" />
       <workItem from="1609074481140" duration="710000" />
       <workItem from="1609115151418" duration="15337000" />
+      <workItem from="1609227147757" duration="1124000" />
+      <workItem from="1609228471756" duration="10547000" />
     </task>
     <servers />
   </component>
@@ -579,14 +593,14 @@
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/sys/manage/controller/RedisController.java</url>
-          <line>21</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/sys/common/filter/RedisSessionInterceptor.java</url>
           <line>28</line>
           <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/sys/manage/controller/LoginController.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
