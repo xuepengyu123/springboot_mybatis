@@ -1,7 +1,7 @@
 package com.sys.manage.controller;
 
 import com.sys.common.entity.Result;
-import com.sys.manage.model.TUser;
+import com.sys.manage.model.User;
 import com.sys.manage.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
@@ -18,7 +18,7 @@ public class ManageController {
 
     @RequestMapping(value = "findOne", method = RequestMethod.GET)
     public Result findOne(int id) {
-        TUser user = userService.selectByPrimaryKey(id);
+        User user = userService.selectByPrimaryKey(id);
         return Result.ok(user);
     }
 

@@ -1,13 +1,13 @@
 package com.sys.manage.service;
 
-import com.sys.manage.model.TUser;
+import com.sys.manage.model.User;
 
 import javax.annotation.Resource;
 
 @Resource
 public interface UserService {
 
-    TUser selectByPrimaryKey(Integer id);
+    User selectByPrimaryKey(Integer id);
 
 
 }

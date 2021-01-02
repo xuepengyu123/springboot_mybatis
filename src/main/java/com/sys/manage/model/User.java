@@ -2,7 +2,7 @@ package com.sys.manage.model;
 
 import java.io.Serializable;
 
-public class TUser implements Serializable {
+public class User implements Serializable {
     private Integer id;
 
     private String userName;

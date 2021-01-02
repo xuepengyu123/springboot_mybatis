@@ -7,17 +7,8 @@ spring:
   datasource:
     username: root
     password: 123456
-    url: jdbc:mysql://localhost:3306/swtest
+    url: jdbc:mysql://localhost:3306/test?serverTimezone=GMT%2B8&useSSL=false
     driver-class-name: com.mysql.jdbc.Driver
-  redis:
-    cluster:
-      nodes:
-        - Centos6701:6379
-        - Centos6701:6380
-        - Centos6702:6380
-        - Centos6702:6379
-        - Centos6703:6379
-        - Centos6703:6380
 
 mybatis:
   mapper-locations: classpath:mapper/*.xml
