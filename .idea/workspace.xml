@@ -10,17 +10,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32f10771-cb2f-4209-be3c-c20c44414134" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sys/manage/controller/TestBookEsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sys/manage/model/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sys/manage/service/EsBookRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sys/manage/service/impl/BookService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sys/common/entity/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sys/common/entity/Result.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sys/manage/controller/ManageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sys/manage/controller/ManageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sys/manage/dao/TUserMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sys/manage/model/TUser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sys/manage/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sys/manage/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sys/manage/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sys/manage/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/TUserMapper.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,6 +88,11 @@
     </replaceStrings>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
@@ -574,6 +574,11 @@
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
+        <entry key="1">
+          <value>
+            <State />
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State />
@@ -590,6 +595,21 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/sys/manage/controller/ManageController.java</url>
           <line>20</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/sys/manage/controller/TestBookEsController.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/sys/manage/controller/TestBookEsController.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/sys/manage/service/impl/BookService.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
