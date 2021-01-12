@@ -10,7 +10,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32f10771-cb2f-4209-be3c-c20c44414134" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/springboot_mybatis.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,8 +67,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
+        <option value="Enum" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -85,7 +93,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="session-redis" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -125,7 +133,7 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="$PROJECT_DIR$/../../../soft/apache-maven-3.6.3" />
+        <option name="mavenHome" value="D:\soft\apache-maven-3.6.3" />
         <option name="userSettingsFile" value="D:\soft\apache-maven-3.6.3\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
@@ -169,7 +177,7 @@
     <option name="width" value="1346" />
     <option name="height" value="688" />
   </component>
-  <component name="ProjectId" id="1m8rVi5vHnB7YuqVRjKx9qH9qE6" />
+  <component name="ProjectId" id="1mEM9us1kXcQTocHNugXDMW80vd" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -220,11 +228,11 @@
     </panes>
   </component>
   <component name="ProjectViewState">
-    <option name="autoscrollFromSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelOrder2" value="2" />
@@ -236,7 +244,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../es/elasticsearch-analysis-ik" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -256,27 +264,46 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\my\code\springboot_mybatis\src\main\resources" />
-      <recent name="D:\my\code\springboot_mybatis\src\main\resources\mapper" />
+      <recent name="D:\my\code\springboot_mybatis\src\main" />
       <recent name="D:\code\managesys\src\main\resources" />
       <recent name="D:\code\managesys" />
       <recent name="D:\code\managesys\src\main\webapp" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.sys.manage.model" />
       <recent name="com.sys.common.api" />
       <recent name="com.sys.manage.entity" />
+      <recent name="com.sys.manage.model" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.App (1)">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+  <component name="RunManager" selected="JUnit.StreamTest.test1">
+    <configuration name="StreamTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springboot_mybatis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.StreamTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StreamTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springboot_mybatis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.StreamTest" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -315,6 +342,20 @@
         </pattern>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.sys.App" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="App " type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true">
+      <module name="springboot_mybatis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sys.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.sys.App" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -474,15 +515,21 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.StreamTest.test" />
+      <item itemvalue="JUnit.StreamTest.test1" />
       <item itemvalue="Maven.managesys [mybatis-generator:generate]" />
+      <item itemvalue="Spring Boot.App " />
       <item itemvalue="Spring Boot.App" />
       <item itemvalue="Spring Boot.App (1)" />
       <item itemvalue="Tomcat Server.managersys" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.StreamTest.test1" />
+        <item itemvalue="JUnit.StreamTest.test" />
         <item itemvalue="Spring Boot.App (1)" />
         <item itemvalue="Spring Boot.App" />
+        <item itemvalue="Spring Boot.App " />
       </list>
     </recent_temporary>
   </component>
@@ -501,7 +548,13 @@
       <workItem from="1554881739747" duration="10953000" />
       <workItem from="1554949493367" duration="15407000" />
       <workItem from="1554973252333" duration="1310000" />
-      <workItem from="1608886086771" duration="5958000" />
+      <workItem from="1609054149716" duration="11961000" />
+      <workItem from="1609074481140" duration="710000" />
+      <workItem from="1609115151418" duration="15337000" />
+      <workItem from="1609227147757" duration="1124000" />
+      <workItem from="1609228471756" duration="18124000" />
+      <workItem from="1609379122984" duration="2466000" />
+      <workItem from="1610432906052" duration="238000" />
     </task>
     <servers />
   </component>
@@ -587,6 +640,9 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -604,6 +660,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/sys/manage/controller/EsController.java</url>
           <line>25</line>
           <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/test/StreamTest.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="20" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
