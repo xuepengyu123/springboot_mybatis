@@ -1,7 +1,9 @@
 package com.sys.manage.controller;
 
 import com.sys.common.entity.Result;
+import com.sys.manage.model.License;
 import com.sys.manage.model.User;
+import com.sys.manage.service.LicenseService;
 import com.sys.manage.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
@@ -15,6 +17,8 @@ public class ManageController {
 
     @Autowired
     private UserService userService;
+    @Autowired
+    private LicenseService licenseService;
 
     @RequestMapping(value = "findOne", method = RequestMethod.GET)
     public Result findOne(int id) {
@@ -28,4 +32,10 @@ public class ManageController {
 //        return Result.ok("插入成功");
 //
 //    }
+
+    @RequestMapping(value = "findLicenseOne", method = RequestMethod.GET)
+    public Result findLicenseOne(int id) {
+        License license = licenseService.selectByPrimaryKey(id);
+        return Result.ok(license);
+    }
 }
