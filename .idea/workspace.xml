@@ -10,14 +10,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32f10771-cb2f-4209-be3c-c20c44414134" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sys/manage/dao/LicenseMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sys/manage/model/License.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sys/manage/service/LicenseService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sys/manage/service/impl/LicenseServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/LicenseMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sys/manage/service/Test1Service.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sys/manage/service/Test2Service.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sys/manage/service/Test3Service.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sys/manage/service/Test4Service.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sys/manage/service/impl/Test1Impl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sys/manage/service/impl/Test2Impl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sys/manage/service/impl/Test3Impl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sys/manage/service/impl/Test4Impl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sys/manage/controller/ManageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sys/manage/controller/ManageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sys/manage/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sys/manage/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/generator.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/generator.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -128,7 +133,7 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="$PROJECT_DIR$/../../../../soft/apache-maven-3.6.3" />
+        <option name="mavenHome" value="D:\..\soft\apache-maven-3.6.3" />
         <option name="userSettingsFile" value="D:\soft\apache-maven-3.6.3\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
@@ -173,7 +178,9 @@
     <option name="height" value="688" />
   </component>
   <component name="ProjectId" id="1m8rVi5vHnB7YuqVRjKx9qH9qE6" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -236,7 +243,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../home/crj/skywalking" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../web/master/alarm" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -262,6 +269,8 @@
       <recent name="D:\code\managesys\src\main\webapp" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.sys.manage.service.impl" />
+      <recent name="com.sys.manage.service" />
       <recent name="com.sys.manage.model" />
       <recent name="com.sys.common.api" />
       <recent name="com.sys.manage.entity" />
@@ -313,7 +322,7 @@
         </pattern>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.sys.App" />
-      <option name="VM_PARAMETERS" value="-javaagent:$PROJECT_DIR$/../../apache-skywalking-apm-bin/agent/skywalking-agent.jar" />
+      <option name="VM_PARAMETERS" value="-javaagent:$PROJECT_DIR$/../apache-skywalking-apm-bin/agent/skywalking-agent.jar" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -330,6 +339,19 @@
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.sys.App" />
       <option name="VM_PARAMETERS" value="-javaagent:$PROJECT_DIR$/../../apache-skywalking-apm-bin/agent/skywalking-agent.jar" />
       <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ManageController" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="springboot_mybatis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sys.manage.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.sys.manage.controller.ManageController" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -408,10 +430,12 @@
     <list>
       <item itemvalue="Maven.managesys [mybatis-generator:generate]" />
       <item itemvalue="Spring Boot.App" />
+      <item itemvalue="Spring Boot.ManageController" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.App" />
+        <item itemvalue="Spring Boot.ManageController" />
         <item itemvalue="Spring Boot.App" />
       </list>
     </recent_temporary>
@@ -443,6 +467,13 @@
       <workItem from="1611483316411" duration="5754000" />
       <workItem from="1611625432451" duration="5478000" />
       <workItem from="1611643892032" duration="15890000" />
+      <workItem from="1612141304711" duration="27817000" />
+      <workItem from="1612832512506" duration="12640000" />
+      <workItem from="1613176464324" duration="28477000" />
+      <workItem from="1613719184627" duration="3145000" />
+      <workItem from="1613731673350" duration="14642000" />
+      <workItem from="1614155127434" duration="80000" />
+      <workItem from="1614155220642" duration="5245000" />
     </task>
     <servers />
   </component>

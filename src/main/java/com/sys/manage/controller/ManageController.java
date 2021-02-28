@@ -1,10 +1,8 @@
 package com.sys.manage.controller;
 
 import com.sys.common.entity.Result;
-import com.sys.manage.model.License;
-import com.sys.manage.model.User;
-import com.sys.manage.service.LicenseService;
-import com.sys.manage.service.UserService;
+import com.sys.manage.model.*;
+import com.sys.manage.service.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -19,6 +17,15 @@ public class ManageController {
     private UserService userService;
     @Autowired
     private LicenseService licenseService;
+    @Autowired
+    private Test1Service test1Service;
+    @Autowired
+    private Test2Service test2Service;
+    @Autowired
+    private Test3Service test3Service;
+    @Autowired
+    private Test4Service test4Service;
+
 
     @RequestMapping(value = "findOne", method = RequestMethod.GET)
     public Result findOne(int id) {
@@ -35,7 +42,36 @@ public class ManageController {
 
     @RequestMapping(value = "findLicenseOne", method = RequestMethod.GET)
     public Result findLicenseOne(int id) {
+        try {
+            Thread.sleep(7000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         License license = licenseService.selectByPrimaryKey(id);
         return Result.ok(license);
+    }
+
+    @RequestMapping(value = "findTest1One", method = RequestMethod.GET)
+    public Result findTest1One(int id) {
+        XueTest1 xueTest1 = test1Service.selectByPrimaryKey(id);
+        return Result.ok(xueTest1);
+    }
+
+    @RequestMapping(value = "findTest2One", method = RequestMethod.GET)
+    public Result findTest2One(int id) {
+        XueTest2 xueTest1 = test2Service.selectByPrimaryKey(id);
+        return Result.ok(xueTest1);
+    }
+
+    @RequestMapping(value = "findTest3One", method = RequestMethod.GET)
+    public Result findTest3One(int id) {
+        XueTest3 xueTest1 = test3Service.selectByPrimaryKey(id);
+        return Result.ok(xueTest1);
+    }
+
+    @RequestMapping(value = "findTest4One", method = RequestMethod.GET)
+    public Result findTest4One(int id) {
+        XueTest4 xueTest1 = test4Service.selectByPrimaryKey(id);
+        return Result.ok(xueTest1);
     }
 }
